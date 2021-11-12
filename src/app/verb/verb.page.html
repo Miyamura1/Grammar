@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+  <ion-back-button  [routerLink]="['/listverb']"></ion-back-button>
+  </ion-buttons>
+  <ion-title >Action Verb</ion-title>
+  </ion-toolbar>
+ </ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Notes</ion-card-title>
+    </ion-card-header>
+    <ion-card-content aria-setsize="1">
+      <p>Verbs are the action words in a sentence that describe what the subject is doing. </p>
+    </ion-card-content>
+    <ion-card-content aria-setsize="1">
+      <p>Along with nouns, verbs are the main part of a sentence or phrase, telling a story about what is taking place. </p>
+    </ion-card-content>
+    <ion-card-content>
+      <p>In fact, without a verb, full thoughts can’t be properly conveyed, and even the simplest sentences, such as Maria sings, have one.</p>
+    </ion-card-content>
+
+    <ion-card-content>
+      <ion-card-title>Example Action Verb</ion-card-title>
+      <p>Dance,Touch,Fart and etc</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar class="tabtest" slot="bottom">
+      <ion-tab-button [routerLink]="['/verb']" tab="tab1">
+        <ion-icon name="book"></ion-icon>
+        <ion-label>Notes</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/verb1']" tab="tab2">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>Example</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/verb2']"tab="tab3">
+        <ion-icon name="play-circle"></ion-icon>
+        <ion-label>Videos</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>

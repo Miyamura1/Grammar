@@ -1,14 +1,7 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-content{
+  --background: #3e4e2a;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.ion-text-center{
+  --background: linear-gradient( 135deg, #4a0df3 10%, #e599db 100%);
+ 
 }

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title>FAQ</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-text color="primary">Q>Do you provide any example in your notes?</ion-text>
+        <p>In our application,We also provide some Example like picture or sentences for each topic. You just have to click Example at navigation bar below and its will take you to example page.</p>
+    </ion-card-content>
+
+    <ion-card-content>
+      <ion-text color="primary">Q>Do you provide quiz for the user? Can we check score after answer it?</ion-text>
+        <p>Yes,We also develop quiz in this application at quiz page. You also can check your answer and how much you have score at the bottom page after you click the submit button.</p>
+      
+    </ion-card-content>
+
+    <ion-card-content>
+      <ion-text color="primary">Q>Whats else you provide for your notes? Do you have videos of teaching or something else?</ion-text>
+        <p>Other than Notes and Example like picture,We also have video in every topic and videos that we provide is video of teaching.You just have to click Videos at navigation bar below and it will take you to videos page.</p>
+      
+    </ion-card-content>
+    </ion-card>
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar class="tabtest" slot="bottom">
+      <ion-tab-button [routerLink]="['/home']" tab="tab1">
+        <ion-icon name="book"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/faq']" tab="tab2">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>FAQ</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/aboutus']"tab="tab3">
+        <ion-icon name="documents"></ion-icon>
+        <ion-label>About US</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/login']"tab="tab3">
+        <ion-icon name="log-out"></ion-icon>
+        <ion-label>Logout</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  </ion-tabs> 
+</ion-toolbar>

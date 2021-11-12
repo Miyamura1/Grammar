@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  [routerLink]="['/listverb']"></ion-back-button>
+      </ion-buttons>
+  <ion-title >Verb Tense</ion-title>
+  </ion-toolbar>
+ </ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Notes</ion-card-title>
+    </ion-card-header>
+    <ion-card-content aria-setsize="1">
+      <p>Verbs come in three tenses: past, present, and future. </p>
+    </ion-card-content>
+    <ion-card-content aria-setsize="1">
+      <p>The past is used to describe things that have already happened </p>
+      <p><ion-text color="tertiary">(Earlier in the day, yesterday, last week, three years ago)</ion-text></p>
+    </ion-card-content>
+
+    <ion-card-content>
+      <p>The present tense is used to describe things that are happening right now, or things that are continuous.</p>
+    </ion-card-content>
+
+    <ion-card-content>
+      <p>The future tense describes things that have yet to happen</p>
+      <p><ion-text color="primary">(Later, tomorrow, next week, next year, three years from now).</ion-text></p>
+    </ion-card-content>
+  
+  </ion-card>
+</ion-content>
+
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar class="tabtest" slot="bottom">
+      <ion-tab-button [routerLink]="['/verbtense']" tab="tab1">
+        <ion-icon name="book"></ion-icon>
+        <ion-label>Notes</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/verbtense1']" tab="tab2">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>Example</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/verbtense2']"tab="tab3">
+        <ion-icon name="play-circle"></ion-icon>
+        <ion-label>Videos</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>
+

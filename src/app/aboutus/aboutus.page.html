@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title>About Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-text color="dark">Welcome to Grammar Lesson!! 
+        <p>We provide notes to learn Grammar. We're dedicated to giving you the very best of Grammar lesson application. Grammar Lesson is being created by Dzul Helmi for students which to help them learn Grammar anywhere.</p>   </ion-text>
+    </ion-card-content>
+
+    <ion-card-content>
+      <ion-text color="dark">We providing the notes with easier to read and also exercise for them that will drove them to learn quicker than before.</ion-text>
+    </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        If you have suggestion to improve our apps, you can email dzulhelmizulkepli@gmail.com . Thankyou!!
+      </ion-card-content>
+    </ion-card>
+</ion-content>
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar class="tabtest" slot="bottom">
+      <ion-tab-button [routerLink]="['/home']" tab="tab1">
+        <ion-icon name="book"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/faq']" tab="tab2">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>FAQ</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/aboutus']"tab="tab3">
+        <ion-icon name="documents"></ion-icon>
+        <ion-label>About US</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/login']"tab="tab3">
+        <ion-icon name="log-out"></ion-icon>
+        <ion-label>Logout</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  </ion-tabs> 
+</ion-toolbar>

@@ -1,0 +1,18 @@
+ion-content{
+    --background: #f0d4d4;
+}
+ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    height: 10%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+    display: block;
+    background: fixed;
+}
+ion-button{
+    --background: linear-gradient( 135deg, #4a0df3 10%, #e599db 100%);
+    margin-top: 20px;
+  }

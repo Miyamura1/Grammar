@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Example</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card width="200%"
+    height="160px" >
+    <ion-card-content>
+     <ion-card-title>Example</ion-card-title>
+     <img src="assets/verbtense.png"
+     width="200%"
+     height="160px" >
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar class="tabtest" slot="bottom">
+    <ion-tab-button [routerLink]="['/verbtense']" tab="tab1">
+      <ion-icon name="book"></ion-icon>
+      <ion-label>Notes</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/verbtense1']" tab="tab2">
+      <ion-icon name="newspaper"></ion-icon>
+      <ion-label>Example</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/verbtense2']"tab="tab3">
+      <ion-icon name="play-circle"></ion-icon>
+      <ion-label>Videos</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>

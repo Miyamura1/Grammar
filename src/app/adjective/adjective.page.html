@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  [routerLink]="['/notes']"></ion-back-button>
+      </ion-buttons>
+    <ion-title >Adjective</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Notes</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content aria-setsize="1">
+      <p>Adjectives are words that describe the qualities or states of being of nouns.</p>
+    </ion-card-content>
+    <ion-card-content aria-setsize="1">
+    <p>It describe the states of being of nouns: That’s a <ion-text color="tertiary">big</ion-text> house.</p>  
+    </ion-card-content>
+    <ion-card-content aria-setsize="1">
+      <p>They can also describe the quantity of nouns: <ion-text color="warning">many, few, millions, eleven.</ion-text> </p>
+    </ion-card-content>
+  </ion-card>
+  </ion-content>
+  <ion-tabs>
+    <ion-tab-bar class="tabtest" slot="bottom">
+      <ion-tab-button [routerLink]="['/adjective']" tab="tab1">
+        <ion-icon name="book"></ion-icon>
+        <ion-label>Notes</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/adjective1']" tab="tab2">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>Example</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/adjective2']"tab="tab3">
+        <ion-icon name="play-circle"></ion-icon>
+        <ion-label>Videos</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  </ion-tabs>

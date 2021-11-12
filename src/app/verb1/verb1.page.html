@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Example</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+  <ion-card-content>
+    <ion-card-title>Example</ion-card-title>
+    <img src="assets/Action-Verbs.png" >
+   </ion-card-content>  
+</ion-card>
+<ion-tabs>
+  <ion-tab-bar class="tabtest" slot="bottom">
+    <ion-tab-button [routerLink]="['/verb']" tab="tab1">
+      <ion-icon name="book"></ion-icon>
+      <ion-label>Notes</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/verb1']" tab="tab2">
+      <ion-icon name="newspaper"></ion-icon>
+      <ion-label>Example</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/verb2']"tab="tab3">
+      <ion-icon name="play-circle"></ion-icon>
+      <ion-label>Videos</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
+</ion-content>

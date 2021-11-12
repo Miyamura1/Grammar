@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  [routerLink]="['/notes']"></ion-back-button>
+      </ion-buttons>
+  <ion-title>Pronouns</ion-title>
+  </ion-toolbar>
+ </ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Personal Pronouns</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content aria-setsize="1">
+      <p><ion-text color="dark">Pronouns stand in for or replace nouns. This lesson is about personal pronouns, which replace nouns that refer to people or things.</ion-text></p>
+    </ion-card-content>
+    
+    <ion-card-content>
+    <p><ion-text color="dark">Example:Billy, Caren, and I were playing poker with friends -><ion-text color="danger">We</ion-text>  were playing poker with friends.</ion-text></p>
+  </ion-card-content>
+
+    <ion-card-content>
+      <p><ion-text color="dark">Case: Determines how a pronoun is being used in a sentence (subject, object, or possessive).</ion-text> </p>
+    </ion-card-content>  
+
+    <ion-card-content>
+      <ion-text color="dark">Personal pronouns have:</ion-text>
+      <p>Number: They are <ion-text color="tertiary">singular</ion-text>  or <ion-text color="danger">plural.</ion-text></p>
+      <p><ion-text color="dark">Person: 
+      <p><ion-text color="tertiary">1st person</ion-text> is the person speaking.</p>
+      <p><ion-text color="danger">2nd person</ion-text> is the person being spoken to.</p>
+      <p><ion-text color="danger">3rd person</ion-text> is the person being spoken about.</p>  
+      <p>Look at the chart 1.1 on Example tab.</ion-text></p>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
+<ion-toolbar>
+<ion-tabs>
+  <ion-tab-bar class="tabtest" slot="bottom">
+    <ion-tab-button [routerLink]="['/pronouns']" tab="tab1">
+      <ion-icon name="book"></ion-icon>
+      <ion-label>Notes</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/pronouns1']" tab="tab2">
+      <ion-icon name="newspaper"></ion-icon>
+      <ion-label>Example</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/pronouns2']"tab="tab3">
+      <ion-icon name="play-circle"></ion-icon>
+      <ion-label>Videos</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
+</ion-toolbar>

@@ -1,0 +1,56 @@
+<ion-header [translucent]="true" color="pastel" >
+  <ion-toolbar  class="ion-text-center" color="pastel">
+    <img src="./assets/sejarahkuiz.png" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+
+  <ion-tabs>
+ 
+    <ion-tab-bar slot="bottom" color="pastel" >
+      <ion-tab-button [routerLink]="['/page2']"  tab="note">
+        <ion-icon name="book-outline"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button [routerLink]="['/kuiz']"  tab="quiz">
+        <ion-icon name="medal-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button [routerLink]="['/faq2']" tab="question">
+        <ion-icon name="help-circle-outline"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+  <p></p>
+  <div  id="container">
+    <img src="/assets/question.png" alt="logo" width="60%">
+
+    <p></p>
+    <ion-grid fixed>
+      <ion-row>
+    
+        <ion-col size="12">
+          <ion-button color="mustard" [routerLink]="['/f4']"  
+           expand="block" fill ="solid">
+          Tingkatan 4
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid fixed>
+      <ion-row>
+    
+        <ion-col size="12">
+          <ion-button color="mustard" [routerLink]="['/f5']"  
+           expand="block" fill ="solid">
+          Tingkatan 5
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

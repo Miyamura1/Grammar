@@ -1,33 +1,72 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header color=tertiary>
+  <ion-toolbar >
+    <ion-title>Welcome</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button color=dark menu="main-menu"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card>
-    <ion-card-header>
-     <ion-card-title>Welcome To Grammar Land !!
-      Are You Ready to Learn?</ion-card-title>
-     </ion-card-header>
-     <ion-card-content>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyySi-Jc3LQqtF27iCozrOOPZfQ-li4wIjXxCPnEPq9J-7jaeHTwHgxrwDIP_un2Jpg-s&usqp=CAU" />
-  </ion-card-content>
-    </ion-card>
+    <img src="\assets\GrammarLesson_LI.jpg">
+  </ion-card>
 
-    <ion-list style="text-align: center" >
-    <ion-button [routerLink]="['/login']" color="dark" expand="floating" fill="outline">
-      LET GET STARTED!!
-    </ion-button>
-  </ion-list>
   
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card color="light">
+    <ion-card-title>Please choose Notes or Essay
+    </ion-card-title>
+  <ion-grid>
+    <ion-card [routerLink]="['/notes']" class ="ion-text-center" text-center padding >
+<ion-text color="dark"><h3>Notes</h3></ion-text>
+        </ion-card>
+
+    <ion-card [routerLink]="['/listexercise']" 
+      class ="ion-text-center " 
+      text-center padding >
+   <ion-text color="dark"><h3>Essay</h3></ion-text>
+        </ion-card>
+
+     <ion-card [routerLink]="['/question1']" 
+      class ="ion-text-center " 
+      text-center padding >
+   <ion-text color="dark"><h3>Quiz</h3></ion-text>
+        </ion-card>
+       
+  </ion-grid>
+</ion-card>
+
 </ion-content>
+
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar class="tabtest" slot="bottom">
+      <ion-tab-button [routerLink]="['/home']" tab="tab1">
+        <ion-icon name="book"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/faq']" tab="tab2">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>FAQ</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/aboutus']"tab="tab3">
+        <ion-icon name="documents"></ion-icon>
+        <ion-label>About US</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/main']"tab="tab3">
+        <ion-icon name="log-out"></ion-icon>
+        <ion-label>Logout</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  </ion-tabs> 
+</ion-toolbar>
+
+
+
 
 
   

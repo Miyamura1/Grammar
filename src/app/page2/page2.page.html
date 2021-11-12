@@ -1,0 +1,53 @@
+<ion-header [translucent]="true" color="pastel">
+  <ion-toolbar class= "ion-text-center" color="pastel">
+    <img src="./assets/notazap.png" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title></ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+ 
+  <ion-tabs>
+ 
+    <ion-tab-bar slot="bottom" color="pastel" tab="note">
+      <ion-tab-button tab="note">
+        <ion-icon name="book-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button [routerLink]="['/kuiz']"  tab="quiz">
+        <ion-icon name="medal-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button [routerLink]="['/faq2']" tab="question">
+        <ion-icon name="help-circle-outline"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+  <p class="ion-text-center" >
+    <img src="/assets/buku.jpg" alt="Buku logo" width="50%">
+  </p>
+
+  <ion-grid fixed>
+    <ion-row>
+  
+      <ion-col size="12">
+        <ion-button color="purple" [routerLink]="['/tingkatan4']"  
+         expand="block" fill ="solid">
+          <ion-icon slot="start" name="laptop-outline" ></ion-icon>
+        Tingkatan 4
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+<ion-grid fixed>
+    <ion-row>
+  <ion-col size="12">
+    <ion-button color="purple" [routerLink]="['/tingkatan5']"
+    expand = "block" fill = "solid">
+      <ion-icon name="laptop-outline"></ion-icon>
+      Tingkatan 5
+    </ion-button>
+  </ion-col>
+</ion-row>
+</ion-grid>

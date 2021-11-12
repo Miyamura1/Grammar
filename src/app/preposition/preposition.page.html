@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+  <ion-back-button [routerLink]="['/notes']"></ion-back-button>
+  </ion-buttons>
+  <ion-title >Preposition</ion-title>
+  </ion-toolbar>
+ </ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Notes</ion-card-title>
+    </ion-card-header>
+    <ion-card-content aria-setsize="2">
+      <p>A preposition is a word used to link nouns, pronouns, or phrases to other words within a sentence.</p>
+    </ion-card-content>
+    
+    <ion-card-content>
+      <p> Prepositions are usually short words, and they are normally placed directly in front of nouns. In some cases, you’ll find prepositions in front of gerund verbs.</p>
+    </ion-card-content>  
+
+    <ion-card-content>
+      <p>Example</p>
+      <p>1.I want to see you <ion-text color="danger">in</ion-text>  the house now </p>
+      <p>2.Please arrive <ion-text color="danger">at</ion-text> 10 p.m tomorrow.</p>
+      <p>3.What special <ion-text color="warning">on</ion-text> the menu today ?Ask Izzat to the waiter</p>
+    </ion-card-content>
+
+  </ion-card>
+  
+</ion-content>
+
+
+<ion-toolbar>
+<ion-tabs>
+  <ion-tab-bar class="tabtest" slot="bottom">
+    <ion-tab-button [routerLink]="['/preposition']" tab="tab1">
+      <ion-icon name="book"></ion-icon>
+      <ion-label>Notes</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/preposition1']" tab="tab2">
+      <ion-icon name="newspaper"></ion-icon>
+      <ion-label>Example</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/preposition2']"tab="tab3">
+      <ion-icon name="play-circle"></ion-icon>
+      <ion-label>Videos</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
+</ion-toolbar>

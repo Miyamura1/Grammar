@@ -1,0 +1,323 @@
+<ion-header>
+  
+  <ion-toolbar class="ion-text-center">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title><ion-text color="dark">Quiz</ion-text></ion-title>
+  </ion-toolbar>
+</ion-header>
+  <img src="./assets/quiz.jpg"
+  height="30%">
+
+<ion-content>
+<ion-card color="pastel">
+  <ion-list color="pastel">
+    <ion-radio-group [(ngModel)]="soalan1">
+      <ion-list-header>
+        <ion-label><h2>1. I .... tennis every Sunday morning.
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item >
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label color={{warna}} [hidden]="jawapan1">play</ion-label>
+         <ion-label color="danger" [hidden]="!jawapan1">play</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>playing</ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>am playing</ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>am play</ion-label>
+        
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan2">
+      <ion-list-header>
+        <ion-label><h2>2.What is Pronouns?</h2></ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>A verb </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label color={{warna}} [hidden]="jawapan2">A noun</ion-label>
+          <ion-label color="danger" [hidden]="!jawapan2">A noun</ion-label>
+         
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>An adjective
+         </ion-label>
+        
+      </ion-item>
+
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan3">
+      <ion-list-header>
+        <ion-label><h2>3.Yesterday, we <ion-text color="primary">were walking</ion-text> along the river when we saw two otters. 
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Present</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Future</ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label color={{warna}} [hidden]="jawapan3">past progressive
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan3">past progressive</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan4">
+      <ion-list-header>
+        <ion-label><h2>4.My best friend lives______Malaysia</h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>in</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>at
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label color={{warna}} [hidden]="jawapan4">on
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan4">on</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan5">
+      <ion-list-header>
+        <ion-label><h2>5.  I will wait ______ 6:30, but then I'm going home.
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>from
+         </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>at
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label color={{warna}} [hidden]="jawapan5">until
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan5">until</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan6">
+      <ion-list-header>
+        <ion-label><h2>6. Find the verb in the sentence.
+          Raccoons live in our neighborhood.
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Raccoons
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label color={{warna}} [hidden]="jawapan6">live
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan6"> live</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>neighborhood
+         </ion-label>
+        
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan7">
+      <ion-list-header>
+        <ion-label><h2>7.Which of the words is an action verb?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>not</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>chair
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label color={{warna}} [hidden]="jawapan7">draw
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan7">draw</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan8">
+      <ion-list-header>
+        <ion-label><h2>8.Words that modify or describe a noun are called
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>action verb
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>pronouns
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label color={{warna}} [hidden]="jawapan8">adjectives
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan8">adjectives</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan9">
+      <ion-list-header>
+        <ion-label><h2>9.  Find the adjective.
+          The dark tunnel frightened us.
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>tunnel
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>us
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label color={{warna}} [hidden]="jawapan9">dark
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan9">dark</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan10">
+      <ion-list-header>
+        <ion-label><h2>10.____ English for two years.
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label color={{warna}} [hidden]="jawapan10">I have been <br>studying
+        </ion-label>
+        <ion-label color="danger" [hidden]="!jawapan10">I have been studying</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>I was study
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>I have studying
+         </ion-label>
+        
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+<ion-button (click)="check(soalan1,soalan2,soalan3,soalan4,soalan5,soalan6,soalan7,soalan8,soalan9,soalan10)" expand="block" color="tertiary" shape="round">
+  Submit
+</ion-button>
+<ion-card>
+  <ion-label>
+    <h2>Result:{{total}} /10</h2>
+    </ion-label>
+</ion-card>
+</ion-content>

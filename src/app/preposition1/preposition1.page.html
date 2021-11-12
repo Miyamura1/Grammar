@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Example </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-slides [options]="slidesOpts" zoom>
+        <ion-slide>
+      <div class="swiper-zoom-container">     
+      <img src="/assets/prepositional1.jpg" tappable (click)="openPreview(img)">
+    </div>
+  </ion-slide>
+</ion-slides>
+</ion-item>
+    <ion-card-header>
+        <ion-card-title class="ion-text-center" aria-setsize="1">Chart 1.1</ion-card-title>
+      </ion-card-header>
+  </ion-card>
+
+</ion-content>
+
+
+<ion-tabs>
+  <ion-tab-bar class="tabtest" slot="bottom">
+    <ion-tab-button [routerLink]="['/preposition']" tab="tab1">
+      <ion-icon name="book"></ion-icon>
+      <ion-label>Notes</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/preposition1']" tab="tab2">
+      <ion-icon name="newspaper"></ion-icon>
+      <ion-label>Example</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/preposition2']"tab="tab3">
+      <ion-icon name="play-circle"></ion-icon>
+      <ion-label>Videos</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true" color="pastel">
+  <ion-toolbar class="ion-text-center" color="pastel">
+    <img src="./assets/kuizsej.png" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title ></ion-title>
+
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+
+  <ion-tabs>
+ 
+    <ion-tab-bar slot="bottom" color="pastel" >
+      <ion-tab-button [routerLink]="['/page2']"  tab="note">
+        <ion-icon name="book-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="quiz">
+        <ion-icon name="medal-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button [routerLink]="['/faq2']" tab="question">
+        <ion-icon name="help-circle-outline"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+<p></p>
+  <div  id="container">
+    <img src="/assets/kuiz.jpeg" alt="logo" width="80%">
+
+    <p></p>
+    <ion-grid fixed>
+      <ion-row>
+    
+        <ion-col size="12">
+          <ion-button color="mustard" [routerLink]="['/quiz']"  
+           expand="block" fill ="solid">
+            <ion-icon slot="start" name="arrow-forward-circle-outline" ></ion-icon>
+          Jom Mula
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  
+ </ion-content>
